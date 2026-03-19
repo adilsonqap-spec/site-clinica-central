@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Veterinária Domiciliar Santa Maria RS | Dra. Rebeca</title>
+    <meta name="description" content="Veterinária especializada em atendimento domiciliar em Santa Maria e região. Consulta no conforto do seu lar, sem estresse para o pet." />
+    
+    <link rel="canonical" href="https://clinicacentral.site/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Veterinária Domiciliar Santa Maria RS | Dra. Rebeca">
+    <meta property="og:description" content="Veterinária especializada em atendimento domiciliar em Santa Maria e região. Consulta no conforto do seu lar, sem estresse para o pet.">
+    <meta property="og:image" content="https://clinicacentral.site/assets/img/hero-bg.webp">
+    <meta property="og:url" content="https://clinicacentral.site/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Veterinária Domiciliar Santa Maria RS | Dra. Rebeca">
+    <meta name="twitter:description" content="Veterinária especializada em atendimento domiciliar em Santa Maria e região. Consulta no conforto do lar, sem estresse.">
+    <meta name="twitter:image" content="https://clinicacentral.site/assets/img/hero-bg.webp">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+    
+    <!-- Tailwind Custom Config -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0F172A",
+                        "secondary": "#22C55E",
+                        "background": "#F9FAFB",
+                        "text-main": "#111827"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+    
+    <!-- CSS Adicional -->
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+    </style>
+    <!-- JSON-LD Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://clinicacentral.site/#organization",
+          "name": "Dra. Rebeca Veterinária Domiciliar",
+          "url": "https://clinicacentral.site/",
+          "logo": "https://clinicacentral.site/assets/img/logo.png",
+          "sameAs": [
+            "https://instagram.com/adilsont.sousa"
+          ]
+        },
+        {
+          "@type": "VeterinaryCare",
+          "@id": "https://clinicacentral.site/#localbusiness",
+          "name": "Dra. Rebeca Veterinária Domiciliar",
+          "image": "https://clinicacentral.site/assets/img/hero-bg.webp",
+          "url": "https://clinicacentral.site/",
+          "telephone": "+5555996695492",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Atendimento domiciliar",
+            "addressLocality": "Santa Maria",
+            "addressRegion": "RS",
+            "postalCode": "97000",
+            "addressCountry": "BR"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "08:00",
+            "closes": "19:00"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Santa Maria e região central do Rio Grande do Sul"
+          },
+          "parentOrganization": {
+            "@id": "https://clinicacentral.site/#organization"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://clinicacentral.site/#website",
+          "url": "https://clinicacentral.site/",
+          "name": "Dra. Rebeca Veterinária Domiciliar",
+          "publisher": {
+            "@id": "https://clinicacentral.site/#organization"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://clinicacentral.site/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://clinicacentral.site/"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "name": "Consulta Clínica Domiciliar",
+          "description": "Avaliação completa da saúde do pet no conforto do lar, sem estresse e com atenção total.",
+          "provider": { "@id": "https://clinicacentral.site/#localbusiness" },
+          "areaServed": { "@type": "City", "name": "Santa Maria" }
+        },
+        {
+          "@type": "Service",
+          "name": "Acompanhamento Preventivo",
+          "description": "Monitoramento contínuo da saúde do seu pet para prevenir doenças e garantir qualidade de vida.",
+          "provider": { "@id": "https://clinicacentral.site/#localbusiness" },
+          "areaServed": { "@type": "City", "name": "Santa Maria" }
+        },
+        {
+          "@type": "Service",
+          "name": "Orientação para Filhotes e Idosos",
+          "description": "Cuidados específicos para cada fase da vida, com orientações personalizadas para o tutor.",
+          "provider": { "@id": "https://clinicacentral.site/#localbusiness" },
+          "areaServed": { "@type": "City", "name": "Santa Maria" }
+        },
+        {
+          "@type": "Service",
+          "name": "Avaliação de Comportamento",
+          "description": "Análise do comportamento do pet no ambiente real para identificar causas de estresse ou ansiedade.",
+          "provider": { "@id": "https://clinicacentral.site/#localbusiness" },
+          "areaServed": { "@type": "City", "name": "Santa Maria" }
+        },
+        {
+          "@type": "Service",
+          "name": "Cuidados Paliativos",
+          "description": "Acompanhamento humanizado para pets com doenças crônicas ou em fase delicada.",
+          "provider": { "@id": "https://clinicacentral.site/#localbusiness" },
+          "areaServed": { "@type": "City", "name": "Santa Maria" }
+        },
+        {
+          "@type": "Service",
+          "name": "Encaminhamento e Acompanhamento",
+          "description": "Indicação de exames e especialistas, com suporte contínuo ao tutor.",
+          "provider": { "@id": "https://clinicacentral.site/#localbusiness" },
+          "areaServed": { "@type": "City", "name": "Santa Maria" }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://clinicacentral.site/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "1. Como agendar a consulta veterinária domiciliar em Santa Maria?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Apenas um clique no botão de WhatsApp deste site. Relate sucintamente o caso e forneceremos opções de horários com resposta ágil visando conforto absoluto imediato."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "2. Quanto custa e quais as rotas e formas de pagamento?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Valores variam apenas perante o local/bairro distancial para gasolina e pela soma de exames paralelos se requeridos. Aceitamos dinheiro e modalidades eletrônicas vitais via PIX ou meios eletrônicos pré combinados."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "3. Vocês atendem urgência alta 24 horas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não suportamos grandes emergências. Animais atropelados, torções orgânicas ou ataques agudos e respiratórios requerem estrutura anestésica e UTI, demandando o deslocamento imediato aos Hospitais/UTI da cidade presencial por favor."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "4. É possível colher material pra avaliação de hemograma?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Totalmente e sem estresse das máquinas. Sangues, urinas, fezes e citologia são aspirados na mesa/sofá de vocês, refrigerados e encaminhados no mesmo momento ao laboratório com exatidão máxima."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "5. Vocês tratam e orientam comportamentos nervosos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Por via do contexto real do domicílio localizamos facilmente as falhas rotineiras motivadores do pânico (seja tédios ou excessos) atuando sobre prescrição em sintonia de enriquecimento ambiental para apaziguar tensões."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-background text-text-main antialiased relative">
+
+    <!-- Header -->
+    <header class="w-full bg-white border-b border-gray-100 sticky top-0 z-50 font-body shadow-sm" x-data="{ mobileMenuOpen: false }">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <img alt="Dra. Rebeca Logo" class="h-10 md:h-12 object-contain" src="/assets/img/logo.png" onerror="this.src='https://placehold.co/150x50?text=Logo'"/>
+                <div class="hidden sm:flex flex-col justify-center">
+                    <span class="text-lg font-extrabold tracking-tight text-primary leading-none mb-1">Dra. Rebeca</span>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-500 font-bold leading-none">Veterinária Domiciliar</span>
+                </div>
+            </div>
+            
+            <!-- Navegação Desktop -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-600">
+                <a class="hover:text-secondary transition-colors" href="#hero">Início</a>
+                <a class="hover:text-secondary transition-colors" href="#sobre">Quem Somos</a>
+                <a class="hover:text-secondary transition-colors" href="#servicos">Serviços</a>
+                <a class="hover:text-secondary transition-colors" href="#beneficios">Benefícios</a>
+                <a class="hover:text-secondary transition-colors" href="#faq">FAQ</a>
+            </nav>
+            
+            <!-- CTA CTA Botão Padrão Desktop -->
+            <div class="hidden lg:block">
+                <a href="https://wa.me/5555996695492" target="_blank" class="bg-secondary hover:bg-green-600 text-white px-5 py-2.5 rounded-lg text-xs font-bold transition-all shadow-md flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base">whatsapp</span>
+                    <div class="text-left leading-none">
+                        <span class="block text-[8px] opacity-90 uppercase tracking-widest mb-[2px]">Agendar Consulta</span>
+                        <span>(55) 99669-5492</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Hamburger (Mobile) -->
+            <button @click="mobileMenuOpen = !mobileMenuOpen" class="lg:hidden text-primary p-2 focus:outline-none focus:ring-2 focus:ring-secondary rounded">
+                <span class="material-symbols-outlined text-3xl" x-text="mobileMenuOpen ? 'close' : 'menu'">menu</span>
+            </button>
+        </div>
+
+        <!-- Menu Mobile Dropdown -->
+        <div x-show="mobileMenuOpen" x-transition class="lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-xl" @click.away="mobileMenuOpen = false">
+            <nav class="flex flex-col p-6 gap-6 text-sm font-bold text-slate-700">
+                <a @click="mobileMenuOpen = false" class="hover:text-secondary transition-colors" href="#hero">Início</a>
+                <a @click="mobileMenuOpen = false" class="hover:text-secondary transition-colors" href="#sobre">Quem Somos</a>
+                <a @click="mobileMenuOpen = false" class="hover:text-secondary transition-colors" href="#servicos">Serviços</a>
+                <a @click="mobileMenuOpen = false" class="hover:text-secondary transition-colors" href="#beneficios">Benefícios</a>
+                <a @click="mobileMenuOpen = false" class="hover:text-secondary transition-colors" href="#como-funciona">Como Funciona</a>
+                <a @click="mobileMenuOpen = false" class="hover:text-secondary transition-colors" href="#depoimentos">Depoimentos</a>
+                <a @click="mobileMenuOpen = false" class="hover:text-secondary transition-colors" href="#faq">FAQ</a>
+                <a @click="mobileMenuOpen = false" href="https://wa.me/5555996695492" target="_blank" class="bg-secondary text-white text-center py-4 rounded-xl shadow-md flex items-center justify-center gap-2 text-base mt-2">
+                    <span class="material-symbols-outlined">whatsapp</span> Agendar por WhatsApp
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="relative bg-white pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-20">
+                <div class="z-10 text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary font-headline leading-[1.15] mb-6">
+                        Veterinária Domiciliar em Santa Maria RS
+                    </h1>
+                    <p class="text-slate-600 text-lg md:text-xl leading-relaxed mb-10 max-w-lg mx-auto lg:mx-0">
+                        Atendimento veterinário focado no bem-estar do seu pet, no conforto do seu lar. Esqueça o estresse no transporte e conte com atenção exclusiva e humanizada em Santa Maria e região central.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+                        <a href="https://wa.me/5555996695492" target="_blank" class="bg-secondary hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold shadow-lg transition-all flex items-center gap-3 w-full sm:w-auto justify-center text-lg shadow-green-200">
+                            <span class="material-symbols-outlined">whatsapp</span>
+                            Agendar pelo WhatsApp
+                        </a>
+                        <a href="#servicos" class="bg-slate-50 hover:bg-slate-100 text-slate-700 font-bold px-8 py-4 rounded-full border border-slate-200 transition-all w-full sm:w-auto text-center">
+                            Conhecer Serviços
+                        </a>
+                    </div>
+                    <p class="text-sm text-slate-500 mt-6 flex items-center justify-center lg:justify-start gap-2 font-medium">
+                        <span class="material-symbols-outlined text-secondary text-lg">verified</span>
+                        Profissionalismo, cuidado e conforto sem sair de casa.
+                    </p>
+                </div>
+                
+                <div class="relative mt-8 lg:mt-0">
+                    <div class="absolute -right-20 -top-20 w-[120%] h-[120%] bg-green-50 rounded-[4rem] blur-3xl -z-10 opacity-70"></div>
+                    <img loading="eager" width="800" height="800" alt="Veterinária atendendo pet com segurança no conforto do lar" class="w-full h-auto object-cover rounded-3xl shadow-2xl relative z-10 aspect-[4/3]" src="/assets/img/hero-bg.webp" onerror="this.src='https://placehold.co/800x600?text=Hero+Image'"/>
+                    
+                    <div class="absolute bottom-6 -left-6 lg:-left-12 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 max-w-[240px] z-20 hidden sm:block">
+                        <p class="text-2xl font-black text-primary leading-tight">Consulta no <br><span class="text-secondary">Conforto do Lar</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. CREDIBILIDADE / DESTAQUES -->
+        <section id="credibilidade" class="relative max-w-7xl mx-auto px-6 -mt-10 mb-24 z-20">
+            <div class="bg-primary rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-10 border border-slate-800 relative overflow-hidden">
+                <div class="absolute right-0 top-0 w-64 h-64 bg-slate-800 rounded-full blur-3xl -z-10 pointer-events-none origin-center transform translate-x-32 -translate-y-32"></div>
+                
+                <div class="flex flex-col items-center text-center flex-1">
+                    <span class="material-symbols-outlined text-5xl text-secondary mb-3">pets</span>
+                    <h3 class="text-white font-bold text-lg mb-1">Sem Estresse</h3>
+                    <p class="text-slate-400 text-sm">O pet em seu próprio ambiente real</p>
+                </div>
+                
+                <div class="hidden md:block w-px h-16 bg-slate-700"></div>
+                
+                <div class="flex flex-col items-center text-center flex-1">
+                    <span class="material-symbols-outlined text-5xl text-secondary mb-3">schedule</span>
+                    <h3 class="text-white font-bold text-lg mb-1">Economia de Tempo</h3>
+                    <p class="text-slate-400 text-sm">Nenhum deslocamento no trânsito</p>
+                </div>
+                
+                <div class="hidden md:block w-px h-16 bg-slate-700"></div>
+                
+                <div class="flex flex-col items-center text-center flex-1">
+                    <span class="material-symbols-outlined text-5xl text-secondary mb-3">volunteer_activism</span>
+                    <h3 class="text-white font-bold text-lg mb-1">Mais Atenção</h3>
+                    <p class="text-slate-400 text-sm">Tempo exclusivo dedicado à saúde</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. QUEM SOMOS -->
+        <section id="sobre" class="max-w-7xl mx-auto px-6 mb-32">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative order-2 lg:order-1">
+                    <div class="absolute -left-10 top-10 w-full h-full bg-slate-100 rounded-[3rem] -z-10"></div>
+                    <img loading="lazy" width="600" height="750" alt="Dra. Rebeca, Médica Veterinária Domiciliar" class="w-full h-auto rounded-[3rem] shadow-xl object-cover aspect-[4/5]" src="/assets/img/sobre.webp" onerror="this.src='https://placehold.co/600x750?text=Foto+Dra.+Rebeca'"/>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <span class="text-secondary font-bold text-xs tracking-[0.2em] uppercase mb-4 block">Quem Somos</span>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-8 font-headline leading-tight uppercase">Veterinário em casa na região de Santa Maria</h2>
+                    
+                    <div class="space-y-6 text-slate-600 leading-relaxed text-lg">
+                        <p>Sou a Dra. Rebeca, médica veterinária apaixonada por propiciar bem-estar animal levando atendimento humanizado e exclusivo para o conforto do seu lar. Evitamos assim as longas esperas e o ambiente desconhecido e caótico das clínicas, focando no que principal: a saúde e a tranquilidade.</p>
+                        
+                        <p>Nosso diferencial é uma avaliação médica que ocorre no verdadeiro contexto do pet. Entendendo o comportamento no ambiente onde ele vive, oferecemos diagnósticos e tratamentos personalizados e muito mais assertivos.</p>
+                        
+                        <p>Seja para cães ou felinos de qualquer idade, nosso objetivo é sempre um atendimento transparente, seguro e focado na prevenção e na qualidade de vida e cuidado integral.</p>
+                    </div>
+                    
+                    <a href="#contato" class="mt-10 inline-flex items-center gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-xl font-bold transition-all shadow-sm">
+                        Fale Conosco <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SERVIÇOS -->
+        <section id="servicos" class="bg-slate-50 py-24 mb-32 border-y border-slate-100">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <span class="text-secondary font-bold text-xs tracking-[0.2em] uppercase mb-4 block">Nossos Serviços</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-6 font-headline">COMO PODEMOS AJUDAR VOCÊ E SEU PET</h2>
+                <p class="text-slate-500 max-w-3xl mx-auto mb-16 leading-relaxed text-lg">
+                    Tudo que sua rotina e a saúde do seu amiguinho precisam, oferecemos com precisão e muito carinho diretamente na sua porta.
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    
+                    <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col group text-left h-full">
+                        <div class="relative h-64 overflow-hidden">
+                            <img loading="lazy" width="600" height="400" alt="Consulta Domiciliar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/img/servico-1.webp" onerror="this.src='https://placehold.co/600x400?text=Servico'"/>
+                            <div class="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined">stethoscope</span></div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-primary mb-4 leading-tight">Consulta Clínica Domiciliar</h3>
+                            <p class="text-slate-500 mb-8 leading-relaxed flex-grow">Avaliação completa da saúde do pet no conforto do lar, sem estresse traumático e com atenção total para exames físicos e escuta detalhada do tutor.</p>
+                            <a href="https://wa.me/5555996695492" target="_blank" class="text-secondary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">Falar no WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col group text-left h-full">
+                        <div class="relative h-64 overflow-hidden">
+                            <img loading="lazy" width="600" height="400" alt="Acompanhamento Preventivo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/img/servico-2.webp" onerror="this.src='https://placehold.co/600x400?text=Servico'"/>
+                            <div class="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined">favorite</span></div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-primary mb-4 leading-tight">Acompanhamento Preventivo</h3>
+                            <p class="text-slate-500 mb-8 leading-relaxed flex-grow">Monitoramento contínuo da saúde do pet para prevenir doenças comuns. Calendário vacinal, vermifugação em dia e exames regulares para longevidade.</p>
+                            <a href="https://wa.me/5555996695492" target="_blank" class="text-secondary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">Falar no WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col group text-left h-full">
+                        <div class="relative h-64 overflow-hidden">
+                            <img loading="lazy" width="600" height="400" alt="Orientação para Filhotes e Idosos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/img/servico-3.webp" onerror="this.src='https://placehold.co/600x400?text=Servico'"/>
+                            <div class="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined">child_friendly</span></div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-primary mb-4 leading-tight">Orientação: Filhotes e Idosos</h3>
+                            <p class="text-slate-500 mb-8 leading-relaxed flex-grow">Cuidados específicos e cruciais para cada fase extrema de vida, com orientações nutricionais personalizadas, ergonomia em casa e adaptação.</p>
+                            <a href="https://wa.me/5555996695492" target="_blank" class="text-secondary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">Falar no WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col group text-left h-full">
+                        <div class="relative h-64 overflow-hidden">
+                            <img loading="lazy" width="600" height="400" alt="Avaliação de Comportamento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/img/servico-4.webp" onerror="this.src='https://placehold.co/600x400?text=Servico'"/>
+                            <div class="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined">psychology</span></div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-primary mb-4 leading-tight">Avaliação de Comportamento</h3>
+                            <p class="text-slate-500 mb-8 leading-relaxed flex-grow">Análise do comportamento e rotina do pet e identificar possíveis causas ambientais de estresse, medos agressividade ou grande ansiedade de separação.</p>
+                            <a href="https://wa.me/5555996695492" target="_blank" class="text-secondary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">Falar no WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col group text-left h-full">
+                        <div class="relative h-64 overflow-hidden">
+                            <img loading="lazy" width="600" height="400" alt="Cuidados Paliativos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/img/servico-5.webp" onerror="this.src='https://placehold.co/600x400?text=Servico'"/>
+                            <div class="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined">spa</span></div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-primary mb-4 leading-tight">Cuidados Paliativos</h3>
+                            <p class="text-slate-500 mb-8 leading-relaxed flex-grow">Acompanhamento sensível, técnico e humanizado para pets em fase delicada ou doenças crônicas profundas, buscando alívio de dor e máxima qualidade de vida.</p>
+                            <a href="https://wa.me/5555996695492" target="_blank" class="text-secondary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">Falar no WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-slate-100 flex flex-col group text-left h-full">
+                        <div class="relative h-64 overflow-hidden">
+                            <img loading="lazy" width="600" height="400" alt="Encaminhamento e Acompanhamento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="/assets/img/servico-6.webp" onerror="this.src='https://placehold.co/600x400?text=Servico'"/>
+                            <div class="absolute top-4 right-4 w-12 h-12 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined">clinical_notes</span></div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-primary mb-4 leading-tight">Engajamento e Acompanhamento</h3>
+                            <p class="text-slate-500 mb-8 leading-relaxed flex-grow">Indicação certeira de especialistas terceirizados para procedimentos cirúrgicos intensos e imagens, com orientação e auxílio ininterrupto na melhor jornada para o pet.</p>
+                            <a href="https://wa.me/5555996695492" target="_blank" class="text-secondary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">Falar no WhatsApp <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-white p-8 md:p-12 rounded-[2rem] inline-flex flex-col md:flex-row items-center gap-8 shadow border border-slate-100">
+                    <div class="text-left max-w-lg">
+                        <h3 class="text-2xl font-bold text-primary mb-2">Busca um serviço médico que não está acima?</h3>
+                        <p class="text-slate-500">Mande uma mensagem. Trataremos sua demanda ou indicaremos excelentes parceiros locais.</p>
+                    </div>
+                    <a href="https://wa.me/5555996695492" target="_blank" class="bg-primary hover:bg-slate-800 text-white px-8 py-4 rounded-full font-bold shadow-lg transition-all whitespace-nowrap inline-flex items-center gap-2">
+                        <span class="material-symbols-outlined">whatsapp</span> Consultar Via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. BENEFÍCIOS -->
+        <section id="beneficios" class="max-w-7xl mx-auto px-6 mb-32">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-bold text-xs tracking-[0.2em] uppercase mb-4 block">Diferenciais</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-6 font-headline">POR QUE ESCOLHER A DRA. REBECA?</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto text-lg hover:text-primary transition-colors cursor-default">Fatores que garantem a segurança do tratamento e a sua paz de espírito ao nos receber em sua residência.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+                
+                <div class="flex gap-6 group items-start">
+                    <div class="w-16 h-16 rounded-2xl bg-slate-50 border border-slate-200 text-secondary flex items-center justify-center shrink-0 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <span class="material-symbols-outlined text-3xl">home</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary mb-2">Sem estresse e traumas para o pet</h3>
+                        <p class="text-slate-500 leading-relaxed">Não é preciso utilizar amarrações, caixas desconfortáveis ou entrar no pânico de salas de espera lotadas de sons desconhecidos nos consultórios padrão.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 group items-start">
+                    <div class="w-16 h-16 rounded-2xl bg-slate-50 border border-slate-200 text-secondary flex items-center justify-center shrink-0 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <span class="material-symbols-outlined text-3xl">local_taxi</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary mb-2">Economia de Tempo valiosa</h3>
+                        <p class="text-slate-500 leading-relaxed">Poupe tempo valioso esquecendo o trânsito da cidade, espera e filas estacionamentos. A nossa estrutura até você é ágil, prática e otimiza radicalmente a logística.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 group items-start">
+                    <div class="w-16 h-16 rounded-2xl bg-slate-50 border border-slate-200 text-secondary flex items-center justify-center shrink-0 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <span class="material-symbols-outlined text-3xl">search</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary mb-2">Consulta no Contexto Real</h3>
+                        <p class="text-slate-500 leading-relaxed">Analisar onde come, a posição e o local que repousa e as interações fornecem evidências clínicas de altíssimo poder e prevê muito mais acertos em curar hábitos e reestabelecer saúde.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 group items-start">
+                    <div class="w-16 h-16 rounded-2xl bg-slate-50 border border-slate-200 text-secondary flex items-center justify-center shrink-0 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
+                        <span class="material-symbols-outlined text-3xl">handshake</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary mb-2">Relação e Atendimento Premium Experiente</h3>
+                        <p class="text-slate-500 leading-relaxed">Um acompanhamento exclusivo da patologia. Ouvir detalhes é essencial para ser resolutivo. Aqui você não compete o valioso tempo com uma fila para ter resolutividade no retorno do cliente após consulta e durante tratamentos demorados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. COMO FUNCIONA -->
+        <section id="como-funciona" class="bg-primary text-white py-24 mb-32 overflow-hidden relative">
+            <div class="absolute right-0 bottom-0 w-[50%] h-full bg-slate-800 rounded-l-[10rem] opacity-30 pointer-events-none hidden lg:block"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="text-center md:text-left mb-16 lg:max-w-lg">
+                    <span class="text-secondary font-bold text-xs tracking-[0.2em] uppercase mb-4 block">Processo Simples</span>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 font-headline">COMO FUNCIONA O ATENDIMENTO</h2>
+                    <p class="text-slate-400 text-lg">Da requisição à alta do paciente, o processo de cuidar do amor incondicional sempre é simples.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left relative z-20">
+                    
+                    <!-- Passo 1 -->
+                    <div class="bg-slate-800/80 backdrop-blur border border-slate-700 p-8 rounded-[2rem] hover:bg-slate-800 transition-colors">
+                        <span class="text-5xl font-black text-secondary opacity-50 block mb-6">01</span>
+                        <h3 class="text-xl font-bold text-white mb-3">Contato Inicial via App</h3>
+                        <p class="text-slate-400 leading-relaxed">Você nos chama no WhatsApp, comenta brevemente a queixa ou a necessidade principal de seu cão ou gatinho para compreendermos.</p>
+                    </div>
+
+                    <!-- Passo 2 -->
+                    <div class="bg-slate-800/80 backdrop-blur border border-slate-700 p-8 rounded-[2rem] hover:bg-slate-800 transition-colors md:translate-y-8">
+                        <span class="text-5xl font-black text-secondary opacity-50 block mb-6">02</span>
+                        <h3 class="text-xl font-bold text-white mb-3">Agendamento Flexível</h3>
+                        <p class="text-slate-400 leading-relaxed">Checamos e propomos os horários ideais que encaixem na sua logística sem atropelos em horários abertos em nossa agenda em Santa Maria e Região.</p>
+                    </div>
+
+                    <!-- Passo 3 -->
+                    <div class="bg-slate-800/80 backdrop-blur border border-slate-700 p-8 rounded-[2rem] hover:bg-slate-800 transition-colors lg:translate-y-16">
+                        <span class="text-5xl font-black text-secondary opacity-50 block mb-6">03</span>
+                        <h3 class="text-xl font-bold text-white mb-3">Cuidado Profundo Local</h3>
+                        <p class="text-slate-400 leading-relaxed">No dia agendado a profissional qualificada chega com a maleta preparadas prestando serviços resolutivos garantindo experiência humana impecável e curativa.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-16 text-center lg:text-left lg:ml-auto block clear-both lg:mt-32">
+                    <a href="https://wa.me/5555996695492" target="_blank" class="bg-secondary hover:bg-green-500 text-white px-8 py-4 rounded-full font-bold shadow-xl transition-all inline-flex items-center gap-2">
+                        <span class="material-symbols-outlined">schedule</span> Agendar O Seu Horário
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. PROVA SOCIAL -->
+        <section id="depoimentos" class="max-w-7xl mx-auto px-6 mb-32 text-center">
+            <span class="text-secondary font-bold text-xs tracking-[0.2em] uppercase mb-4 block">Depoimentos</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-16 font-headline">O QUE NOSSOS CLIENTES DIZEM</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <!-- Depoimento 1 -->
+                <div class="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-yellow-400 mb-6 gap-1">
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                        </div>
+                        <p class="text-slate-600 italic leading-relaxed font-medium mb-8">"Atendimento individualizado com foco total no bem-estar do pet. O fato de pouparmos horas com pânico com gatilhos externos numa estrutura externa desconfortável foi magnífico com minha felina"</p>
+                    </div>
+                    <p class="font-bold text-primary text-sm uppercase tracking-wide">Tutor Cuidado na Cama</p>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-yellow-400 mb-6 gap-1">
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                        </div>
+                        <p class="text-slate-600 italic leading-relaxed font-medium mb-8">"Experiência altamente diferenciada no conforto do lar. Ter os ouvidos atentos às mudanças súbitas alimentares sem relógio e pressa me provaram sua qualificação."</p>
+                    </div>
+                    <p class="font-bold text-primary text-sm uppercase tracking-wide">Tutora em Santa Maria</p>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-yellow-400 mb-6 gap-1">
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                        </div>
+                        <p class="text-slate-600 italic leading-relaxed font-medium mb-8">"Alta satisfação e alívio com os tutores atendidos de cães em situação idosa paliativa. É reconfortante presenciar empatia total com as dores da minha golden de 15 anos dentro da sua própria varanda!"</p>
+                    </div>
+                    <p class="font-bold text-primary text-sm uppercase tracking-wide">Fã do Serviço Preventivo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. SEO LOCAL / ÁREA -->
+        <section id="area-atuacao" class="bg-slate-50 py-24 mb-32 border-y border-slate-100">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="text-secondary font-bold text-xs tracking-[0.2em] uppercase mb-4 block">Nossa Localização e Cobertura</span>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-6 font-headline">VETERINÁRIA DOMICILIAR EM SANTA MARIA E REGIÃO</h2>
+                    <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                        Cobrimos todos os bairros de <strong class="text-primary font-bold">Santa Maria (RS)</strong> e prestamos atendimentos estendidos a cidades fronteiriças da região central do Rio Grande do Sul. Nossa infraestrutura volante comporta todos insumos básicos rotineiros para ampará-los corretamente.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-slate-700 font-medium">
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm mt-1 border border-slate-100"><span class="material-symbols-outlined text-sm">schedule</span></div>
+                            <div>
+                                <h3 class="font-bold text-primary uppercase text-xs mb-1">Horário</h3>
+                                <p class="text-sm">Segunda a Sábado<br>das 08:00 às 19:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-primary shadow-sm mt-1 border border-slate-100"><span class="material-symbols-outlined text-sm">location_on</span></div>
+                            <div>
+                                <h3 class="font-bold text-primary uppercase text-xs mb-1">Base</h3>
+                                <p class="text-sm">Atendimento volante presencial focando Santa Maria - RS</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/5555996695492" target="_blank" class="bg-primary hover:bg-slate-800 text-white px-8 py-4 rounded-full font-bold shadow-lg transition-all inline-flex items-center gap-2">
+                        <span class="material-symbols-outlined">map</span> Consultar meu Bairro
+                    </a>
+                </div>
+                
+                <div class="w-full h-80 lg:h-full min-h-[400px] bg-slate-200 rounded-[2rem] overflow-hidden border-4 border-white shadow-xl flex items-center justify-center relative bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PGRlZnM+PHBhdHRlcm4gaWQ9ImciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTAgMGg0MHY0MEgwem0yMCAyMGgtdjIwSDIweiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDAsMCwwLDAuMDUpIiAvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNnKSIgLz48L3N2Zz4=')]">
+                    <!-- Placeholder de Map -->
+                    <div class="text-center p-6 bg-white/90 backdrop-blur rounded-2xl shadow">
+                        <span class="material-symbols-outlined text-5xl text-secondary mb-2">satellite_alt</span>
+                        <p class="font-bold text-slate-800">Mapa de Atendimento</p>
+                        <p class="text-sm text-slate-500">[Substituir pelo seu Iframe do Google Maps]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. FAQ / DÚVIDAS -->
+        <section id="faq" class="max-w-4xl mx-auto px-6 mb-32">
+            <div class="text-center mb-16">
+                <span class="text-secondary font-bold text-xs tracking-[0.2em] uppercase mb-4 block">Central de Respostas</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-primary mb-6 font-headline">PERGUNTAS FREQUENTES SOBRE VETERINÁRIO EM CASA EM SANTA MARIA</h2>
+            </div>
+            
+            <!-- Accordion Container -->
+            <div class="space-y-4" x-data="{ active: null }">
+                
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-300 transition-colors shadow-sm">
+                    <button @click="active = active === 1 ? null : 1" class="w-full text-left p-6 font-bold text-primary flex justify-between items-center text-lg focus:outline-none">
+                        <span>1. Como agendar a consulta veterinária domiciliar em Santa Maria?</span>
+                        <span class="material-symbols-outlined bg-slate-50 rounded-full p-1 transition-transform" :class="active === 1 ? 'rotate-180 bg-slate-100 text-secondary' : 'text-slate-400'">expand_more</span>
+                    </button>
+                    <div x-show="active === 1" x-collapse>
+                        <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-100 mt-2">
+                            Apenas um clique no botão de WhatsApp deste site. Relate sucintamente o caso e forneceremos opções de horários com resposta ágil visando conforto absoluto imediato.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-300 transition-colors shadow-sm">
+                    <button @click="active = active === 2 ? null : 2" class="w-full text-left p-6 font-bold text-primary flex justify-between items-center text-lg focus:outline-none">
+                        <span>2. Quanto custa e quais as rotas e formas de pagamento?</span>
+                        <span class="material-symbols-outlined bg-slate-50 rounded-full p-1 transition-transform" :class="active === 2 ? 'rotate-180 bg-slate-100 text-secondary' : 'text-slate-400'">expand_more</span>
+                    </button>
+                    <div x-show="active === 2" x-collapse>
+                        <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-100 mt-2">
+                            Valores variam apenas perante o local/bairro distancial para gasolina e pela soma de exames paralelos se requeridos. Aceitamos dinheiro e modalidades eletrônicas vitais via PIX ou meios eletrônicos pré combinados.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-300 transition-colors shadow-sm">
+                    <button @click="active = active === 3 ? null : 3" class="w-full text-left p-6 font-bold text-primary flex justify-between items-center text-lg focus:outline-none">
+                        <span>3. Vocês atendem urgência alta 24 horas?</span>
+                        <span class="material-symbols-outlined bg-slate-50 rounded-full p-1 transition-transform" :class="active === 3 ? 'rotate-180 bg-slate-100 text-secondary' : 'text-slate-400'">expand_more</span>
+                    </button>
+                    <div x-show="active === 3" x-collapse>
+                        <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-100 mt-2">
+                            Não suportamos grandes emergências. Animais atropelados, torções orgânicas ou ataques agudos e respiratórios requerem estrutura anestésica e UTI, demandando o deslocamento imediato aos Hospitais/UTI da cidade presencial por favor.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-300 transition-colors shadow-sm">
+                    <button @click="active = active === 4 ? null : 4" class="w-full text-left p-6 font-bold text-primary flex justify-between items-center text-lg focus:outline-none">
+                        <span>4. É possível colher material pra avaliação de hemograma?</span>
+                        <span class="material-symbols-outlined bg-slate-50 rounded-full p-1 transition-transform" :class="active === 4 ? 'rotate-180 bg-slate-100 text-secondary' : 'text-slate-400'">expand_more</span>
+                    </button>
+                    <div x-show="active === 4" x-collapse>
+                        <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-100 mt-2">
+                            Totalmente e sem estresse das máquinas. Sangues, urinas, fezes e citologia são aspirados na mesa/sofá de vocês, refrigerados e encaminhados no mesmo momento ao laboratório com exatidão máxima.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-slate-300 transition-colors shadow-sm">
+                    <button @click="active = active === 5 ? null : 5" class="w-full text-left p-6 font-bold text-primary flex justify-between items-center text-lg focus:outline-none">
+                        <span>5. Vocês tratam e orientam comportamentos nervosos?</span>
+                        <span class="material-symbols-outlined bg-slate-50 rounded-full p-1 transition-transform" :class="active === 5 ? 'rotate-180 bg-slate-100 text-secondary' : 'text-slate-400'">expand_more</span>
+                    </button>
+                    <div x-show="active === 5" x-collapse>
+                        <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-100 mt-2">
+                            Por via do contexto real do domicílio localizamos facilmente as falhas rotineiras motivadores do pânico (seja tédios ou excessos) atuando sobre prescrição em sintonia de enriquecimento ambiental para apaziguar tensões.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. CTA / CONTATO -->
+        <section id="contato" class="max-w-7xl mx-auto px-6 mb-32">
+            <div class="bg-primary rounded-[3rem] p-10 md:p-20 shadow-2xl relative overflow-hidden text-center text-white border border-slate-800">
+                <div class="absolute inset-0 bg-green-500/10 pointer-events-none origin-center transform scale-150 rotate-12 blur-3xl opacity-30"></div>
+                
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 font-headline relative z-10 w-full max-w-4xl mx-auto uppercase">Fale no WhatsApp para garantir sua vaga hoje</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto text-lg md:text-xl mb-10 relative z-10 leading-relaxed">
+                    Você pode conversar diretamente comigo com um atendimento que responde em até rápidos 30 minutos em horário útil comercial das (08h às 19h).
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-5 justify-center mt-8 relative z-10 w-full max-w-lg mx-auto">
+                    <a href="https://wa.me/5555996695492" target="_blank" class="bg-secondary hover:bg-green-500 text-white px-8 py-5 rounded-full font-bold shadow-2xl transition-all flexitems-center flex-1 justify-center gap-3 text-lg border border-transparent flex items-center">
+                        <span class="material-symbols-outlined">whatsapp</span> Mensagem de WhatsApp
+                    </a>
+                    <a href="tel:5555996695492" class="bg-transparent hover:bg-slate-800 text-white border-2 border-slate-600 px-8 py-5 rounded-full font-bold transition-all flex items-center flex-1 justify-center gap-3 text-lg">
+                        <span class="material-symbols-outlined">call</span> Ligação Indireta
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 11. FOOTER -->
+    <footer class="bg-white border-t border-slate-100 pt-20 pb-10 mt-auto font-body">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            
+            <div class="col-span-1 md:col-span-1">
+                <img alt="Dra.Rebeca" class="h-10 object-contain mb-6 grayscale hover:grayscale-0 transition-all opacity-80" src="/assets/img/logo.png" onerror="this.src='https://placehold.co/150x50?text=Logo'"/>
+                <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                    Acolhedor e Premium com total autoridade e garantia técnica. Atendimento Veterinário no seu domicílio em Santa Maria RS e nas proximidades da Região e Brasil.
+                </p>
+                <div class="flex items-center gap-4">
+                    <a href="https://instagram.com/adilsont.sousa" target="_blank" aria-label="Instagram" class="w-10 h-10 rounded-full border border-slate-200 text-slate-500 flex items-center justify-center hover:bg-slate-50 hover:text-primary transition-colors">
+                        <span class="material-symbols-outlined text-lg">photo_camera</span> <!-- Instagram placeholder icon -->
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="font-bold text-primary uppercase text-xs tracking-widest mb-6">Mapa do site</h3>
+                <ul class="space-y-4 text-sm text-slate-500">
+                    <li><a href="# hero" class="hover:text-secondary transition-colors block">Início</a></li>
+                    <li><a href="#servicos" class="hover:text-secondary transition-colors block">Consulta</a></li>
+                    <li><a href="#sobre" class="hover:text-secondary transition-colors block">Dra. Rebeca</a></li>
+                    <li><a href="#faq" class="hover:text-secondary transition-colors block">Dúvidas</a></li>
+                    <li><a href="#contato" class="hover:text-secondary transition-colors block">Fale Conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-2">
+                <h3 class="font-bold text-primary uppercase text-xs tracking-widest mb-6">Contatos Oficiais</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 text-sm text-slate-500">
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secondary text-lg">call</span>
+                            <span class="font-bold text-slate-700">(55) 99669-5492</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secondary text-lg">whatsapp</span>
+                            <span class="font-bold text-slate-700">(55) 99669-5492</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secondary text-lg">schedule</span>
+                            <span>Seg. a Sáb. - 08:00 às 19:00</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 max-w-xs">
+                        <span class="material-symbols-outlined text-secondary text-lg">home_pin</span>
+                        <span class="leading-relaxed">Cuidado domicilar particular atendendo aos bairros e perímetro metropolitano regional do Rio grande do sul nas áreas de Santa Maria - RS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 border-t border-slate-100 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+            <p>© 2026 Dra. Rebeca Veterinária Domiciliar. Todos os direitos reservados.</p>
+            <p class="font-bold text-slate-500 tracking-wider">Desenvolvido por A&S Midia Digital</p>
+        </div>
+    </footer>
+
+    <!-- WPP FLUTUANTE -->
+    <a href="https://wa.me/5555996695492" target="_blank" class="fixed bottom-6 right-6 z-[100] w-14 h-14 bg-secondary text-white rounded-full flex items-center justify-center shadow-lg shadow-green-500/30 hover:scale-110 hover:bg-green-500 transition-all duration-300" aria-label="WhatsApp" title="Agendar Consulta!">
+        <span class="material-symbols-outlined text-[32px]">whatsapp</span>
+    </a>
+
+</body>
+</html>
